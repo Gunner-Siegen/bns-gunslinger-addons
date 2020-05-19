@@ -1,0 +1,6 @@
+FileName = xml[bit].dat.files\\skill3_contextscriptdata_shooter.xml
+Search = <result context-3="190520" context-ui-effect="key-change" control-mode="classic" />
+Replace = <result skillbar-1="190520" context-ui-effect="key-change" control-mode="classic" />
+Search = <result context-3="190520" context-ui-effect="key-change" control-mode="bns" />
+Replace = <result skillbar-1="190520" context-ui-effect="key-change" control-mode="bns" />
+Description = Tripshot on 1 - Normal Mode
