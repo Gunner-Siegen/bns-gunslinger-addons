@@ -2,12 +2,6 @@
 <patches>
 <!-- Gunslinger -->
   <patch file="skill3_contextscriptdata_shooter.xml;skill3_contextscriptdata_shooter_contextsimplemode.xml">
-    <!-- Tripshot on 1 -->
-	<select-nodes query="/table/contextscript/stance/layer/decision/result/@context-3[.=190520]">
-	  <set-name name="skillbar-1" />
-	</select-nodes>
-	
-	
 	<!-- Unload, Trueshot and Undertaker on RMB (<condition skill="190662" /> for next patch)-->
 	<select-nodes query="/table/contextscript/stance/layer[decision/condition[@skill=190085 or @skill=190360]]">
 	  <remove />
