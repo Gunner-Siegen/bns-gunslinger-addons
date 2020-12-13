@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patches>
+<!-- Gunslinger -->
+  <patch file="skill3_contextscriptdata_shooter.xml;skill3_contextscriptdata_shooter_contextsimplemode.xml">
+	<!-- Remove shadow bulletstorm that costs <10 focus, replaced with darkshot)-->
+	<select-nodes query="/table/contextscript/stance/layer/decision[condition[@skill=190682 or @skill=190662]]">
+	  <remove />
+	</select-nodes>
+ </patch>
+ </patches>
