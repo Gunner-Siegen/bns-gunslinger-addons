@@ -1,6 +1,11 @@
-FileName = xml[bit].dat.files\\skill3_contextscriptdata_shooter.xml
-Search = <result context-3="190520" context-ui-effect="key-change" control-mode="classic" />
-Replace = <result skillbar-1="190520" context-ui-effect="key-change" control-mode="classic" />
-Search = <result context-3="190520" context-ui-effect="key-change" control-mode="bns" />
-Replace = <result skillbar-1="190520" context-ui-effect="key-change" control-mode="bns" />
-Description = Tripshot on 1 - Normal Mode
+<patches>
+  <!--Moves Tripshot from F to 1 for either spec.
+	Warning though, this makes holding or quickly tapping 1 force your character to
+	use tripshot instead of blocking. To block successully, you must only press 1 exactly once!-->
+  <patch file="skill3_contextscriptdata_shooter.xml">
+    <select-nodes query="//condition[@skill[(.='190520') or (.='190525')]]/following-sibling::result[not(@skillbar-1)]/@*[(.='190520') or (.='190525')]">
+      <!--Move Tripshot to 1-->
+      <set-name name="skillbar-1" />
+    </select-nodes>
+  </patch>
+</patches>
