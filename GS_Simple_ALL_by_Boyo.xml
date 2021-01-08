@@ -947,6 +947,13 @@ F skills that should have highest priority
               <result context-3="190520" context-ui-effect="key-change" control-mode="bns" />
             </decision>
           </layer>
+		  <layer>
+            <decision>
+              <condition skill="190525" />
+              <result context-3="190525" context-ui-effect="key-change" control-mode="classic" />
+              <result context-3="190525" context-ui-effect="key-change" control-mode="bns" />
+            </decision>
+          </layer>
 End F Skills
 
 Fire F Skills (Only use F if you DON'T want to use unloads)
